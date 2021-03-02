@@ -142,3 +142,29 @@ Intro
     font-size: 1.1rem;
     line-height: 2;
 }
+/****************************
+BLOG
+****************************/
+.blog{
+    padding: var(--padding);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.blog article{
+    flex: 0 0 48%;
+    text-align: center;
+}
+.blog img{
+    width: 100%;
+    background-position: center;
+}
+.blog h3{
+    padding-top: 40px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.blog p {
+    font-weight: 300;
+    padding: 50px 0;
+}

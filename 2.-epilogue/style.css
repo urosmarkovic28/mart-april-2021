@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Sans+Pro:wght@200;300;400&display=swap');
+:root{
+    --font-family:'Source Sans Pro', sans-serif;
+    --logo: 'Pacifico', cursive;
+    --fontSize:16px;
+    --white:#fff;
+    --bg: #f4f4f4;
+}
+/******************************
+BASIC STYLES
+******************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font-family);
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+/******************************
+HEADER
+******************************/
+header{
+    background-image:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)), url(images/banner.jpg);
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    font-family: var(--logo);
+    font-size: 6rem;
+    color: var(--white);
+}
+
+.underline{
+    width: 35%;
+    height: 2px;
+    background: var(--white);
+    margin: 10px auto 50px auto;
+}
+header p{
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--white);
+    opacity: .7;
+}

@@ -181,7 +181,7 @@ BLOCKQUOTE
     align-items: center;
 }
 .blockquote blockquote{
-    color: var(--white);
+    color: white;
     opacity: .7;
     text-align: center;
     font-size: 1.7rem;

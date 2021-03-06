@@ -10,6 +10,7 @@
     --gray: #aaaaaa;
     --transitions: .3s ease;
     --py: 100px 0;
+    --pt: 100px 0 0 0;
 }
 /******************************
 BASIC STYLES
@@ -49,6 +50,7 @@ button{
 }
 button:hover{
     background-color: var(--hover);
+    transition: .3s ease;
 }
 h2{
     font-size: 2.5rem;
@@ -134,7 +136,8 @@ INTRO
     flex: 0 0 45%;
 }
 .intro h4,
-.gallery h4{
+.gallery h4,
+.services h4 {
     text-transform: uppercase;
     font-size: 1.5rem;
     color: var(--gray);
@@ -189,6 +192,74 @@ GALLERY
     margin: 0 5px;
     padding: 20px 40px;
 }
+.gallery .buttons button:hover{
+    background-color: var(--hover);
+    transition: .3s ease;
+}
 .gallery .buttons button:last-child{
     background-color: var(--headings);
+}
+.gallery .buttons button:last-child:hover{
+    background-color: var(--text);
+    transition: .3s ease;
+}
+/******************************
+SERVICES
+******************************/
+.services{
+    padding: var(--pt);
+    padding-bottom: 20px;
+}
+.services article{
+    margin-top: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.services article .col{
+   display: flex;
+   align-items: center;
+   flex: 0 0 47%;
+   margin-bottom: 80px;
+   justify-content: space-between;
+}
+.services article img{
+    width: 100%;
+    border-radius: 50%;
+    border: solid 0.5em rgba(144, 144, 144, 0.25);
+    display: block;
+}
+.services article .col .text{
+    flex: 0 0 67%;
+}
+.services article .col .image{
+    flex: 0 0 27%;
+   
+}
+.services article .col:nth-child(even) .text{
+    order: 2;
+}
+.services article .col:nth-child(even) .image{
+    order: 1;
+}
+.services article .col:nth-child(odd) .text{
+    text-align: right;
+}
+.services .text h3{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.services .text h5{
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: var(--gray);
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+.services .text p{
+    font-size: 1.1rem;
+}
+.services article img:hover{
+    border: 8px solid var(--akcents);
+    transition: .3s ease;
 }

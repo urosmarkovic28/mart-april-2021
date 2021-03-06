@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+:root{
+    --fontFamily:'Raleway', sans-serif;
+    --fontsize:16px;
+    --hover:#f44066;
+    --akcents: #f32853;
+    --white: #fff;
+    --headings: #484848; /*rgb(72,72,72)*/
+    --text: #666;
+    --gray: #aaaaaa;
+    --transitions: .3s ease;
+}
+/******************************
+BASIC STYLES
+******************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a:hover{
+    transition: var(--transitions);
+}
+ul{
+    list-style: none;
+}
+body{
+    font-family: var(--fontFamily);
+    font-weight: 400;
+    font-size: var(--fontsize);
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
+button{
+    padding: 15px 40px;
+    background-color: var(--akcents);
+    border: none;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 9px;
+}
+button:hover{
+    background-color: var(--hover);
+}
+/******************************
+HEADER
+******************************/
+header{
+    background-image: linear-gradient(rgba(72,72,72,.9),rgba(72,72,72,.9)), url(images/banner.jpg);
+    background-position: center top;
+    background-size: cover;
+    height: 100vh;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 70px 0;
+}
+.logo span{
+    font-weight: 700;
+}
+.logo{
+    font-size: 1.3rem;
+    color: var(--white);
+}
+.logo:hover{
+    color: var(--akcents);
+}
+header a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+header ul{
+    display: flex;
+    justify-content: space-around;
+}
+header ul li a{
+    color: var(--white);
+    opacity: .7;
+    margin-left: 60px;
+    font-size: 1.2rem;
+}
+header ul li a:hover{
+    color: var(--white);
+    opacity: 1;
+}
+header div{
+    display: flex;
+    height: 85vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+header div h1{
+    color: var(--white);
+    font-size: 4rem;
+}
+header div p{
+    color: var(--gray);
+    font: 1.8rem;
+    padding: 50px 0;
+    line-height: 1.5;
+}

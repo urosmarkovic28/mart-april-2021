@@ -55,6 +55,11 @@ h2{
    text-transform: uppercase;
    line-height: 1.5;
 }
+.container{
+    width: 75%;
+    margin: auto;
+   
+}
 /******************************
 HEADER
 ******************************/
@@ -128,7 +133,8 @@ INTRO
 .intro article{
     flex: 0 0 45%;
 }
-.intro h4{
+.intro h4,
+.gallery h4{
     text-transform: uppercase;
     font-size: 1.5rem;
     color: var(--gray);
@@ -141,4 +147,48 @@ INTRO
 }
 .intro p:first-child{
     padding-bottom: 30px;
+}
+/******************************
+GALLERY
+******************************/
+.gallery{
+    padding: var(--py);
+    background-color: #f6f6f6;
+}
+.gallery h2, 
+.gallery h4{
+    text-align: center;
+}
+.gallery .container{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.gallery .container img{
+    width: 100%;
+    display: block;
+
+}.gallery .container div{
+    flex: 0 0 48%;
+}
+.gallery .container div h3{
+    background-color: var(--white);
+    color: #484848;
+    text-align: center;
+    padding: 2em 1em;
+    font-size: 1.35rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    box-shadow: 0px 0.0375em 0.125em 0px rgb(0 0 0 / 15%);
+}
+.gallery .buttons{
+    text-align: center;
+    margin-top: 60px;
+}
+.gallery .buttons button{
+    margin: 0 5px;
+    padding: 20px 40px;
+}
+.gallery .buttons button:last-child{
+    background-color: var(--headings);
 }

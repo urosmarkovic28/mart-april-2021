@@ -66,10 +66,10 @@ h2{
 HEADER
 ******************************/
 header{
-    background-image: linear-gradient(rgba(72,72,72,.9),rgba(72,72,72,.9)), url(images/banner.jpg);
+    background-image: linear-gradient(rgba(72,72,72,.7),rgba(72,72,72,.7)), url(images/banner.jpg);
     background-position: center top;
     background-size: cover;
-    height: 100vh;
+    height: 95vh;
 }
 header nav{
     display: flex;
@@ -262,4 +262,62 @@ SERVICES
 .services article img:hover{
     border: 8px solid var(--akcents);
     transition: .3s ease;
+}
+/******************************
+CTA
+******************************/
+.cta{
+    background-image:linear-gradient(rgba(72,72,72,.7), rgba(72,72,72,.7)), url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: var(--py) ;
+}
+.cta h2{
+    color: white;
+}
+.cta h4{
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    color: var(--gray);
+    font-weight: 400;
+    padding: 50px 0;
+}
+/******************************
+FOOTER
+******************************/
+footer{
+    padding: var(--py);
+    text-align: center;
+    background: #f6f6f6;
+}
+footer i{
+    font-size: 3rem;
+    color: var(--gray);
+    margin: 0 60px 0px 0;
+}
+footer i:hover{
+    color: var(--headings);
+    transition: .3s ease;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+footer ul li{
+    border-right: 1px solid var(--gray);
+    color: var(--gray);
+    padding: 0 20px;
+}
+footer ul li:last-child{
+    border: none;
+}
+footer ul li a{
+    color: var(--gray);
+    text-decoration: none;
+}
+footer ul li a:hover{
+    color: var(--text);
 }

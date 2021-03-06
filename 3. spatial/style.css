@@ -165,6 +165,7 @@ GALLERY
 .gallery .container{
     margin-top: 100px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .gallery .container img{
@@ -320,4 +321,71 @@ footer ul li a{
 }
 footer ul li a:hover{
     color: var(--text);
+}
+/******************************
+RESPONSIVE
+******************************/
+@media(max-width:767px){
+    header nav{
+        padding: 20px 20px 0;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    header ul li a{
+        margin: 20px;
+        font-size: 1rem;
+    }
+    header div p{
+        font-size: 1rem;
+        text-align: center;
+    }
+    button{
+        padding: 15px 30px;
+    }
+    .intro{
+        width: 90%;
+        flex-wrap: wrap;
+    }
+    .intro article{
+        flex: 0 0 100%;
+    }
+    h2{
+        font-size: 2rem;
+        
+    }
+    .intro h4, .gallery h4, .services h4{
+        font-size: 1.2rem;
+    }
+    .cointaner{
+        width: 90%;
+    }
+    .gallery .container div {
+        flex: 0 0 100%;
+        margin-bottom: 30px;
+    }
+    .gallery .buttons button{
+        margin: 0 10px 10px 0;
+        padding: 10px 30px;
+    }
+    .services article .col{
+        flex: 0 0 100%;
+    }
+    .cta h2{
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    .cta h4{
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    footer i{
+        margin: 20px;
+    }
+    footer ul{
+        flex-direction: column;
+    }
+    footer ul li{
+        padding: 10px;
+    }
 }

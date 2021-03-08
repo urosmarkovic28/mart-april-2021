@@ -157,3 +157,46 @@ MARKETING
     color: #c0745d;
     font-weight: 700;
 }
+/****************************************
+MAIN
+****************************************/
+.main{
+    background-color: var(--mainBcg);
+    color: var(--mainText);
+    padding: 90px 0;
+}
+.main .container{
+    display: flex;
+    justify-content: space-between;
+}
+.main .container .left{
+    flex: 0 0 68%;
+}
+.main .container .right{
+    flex: 0 0 30%;
+}
+.main .container .left h2{
+    font-size: 1.5rem;
+    color: #bc765f;
+    margin-bottom: 20px;
+}
+.main .container .left p{
+    color: #774535;
+}
+.main .container .left p a{
+    text-decoration: underline;
+    color: #BC765f;
+}
+.main .container .right h2 {
+    font-size: 1.5rem;
+    color: #bc765f;
+    margin-bottom: 20px;
+}
+.main .container .right ul li{
+    padding-bottom: 22px;
+}
+.main .container .right ul li a{
+    text-decoration: underline;
+    color: #774535;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+:root{
+    --fontFamily: 'Raleway', sans-serif;
+    --bcgColor: #180E0B;
+    --aText: #A2A2A2;
+    --hover: #56C9D6;
+    --marketingbcg: #372019;
+    --marketingText: #8c5240;
+    --mainBcg: #261611;
+    --mainText: #774535;
+    --footerText: #774535;
+    --transition: .3s ease;
+    --fontSize: 16px;
+}
+/****************************************
+BASIC
+****************************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: var(--fontSize);
+    background: var(--bcgColor);
+    color: white;
+    font-family: var(--fontFamily);
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/****************************************
+HEADER
+****************************************/
+header{
+    margin-top: 20px;
+    padding: 75px 0;
+    position: relative;
+}
+header .logo{
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 45px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+nav{
+    position: absolute;
+    right: 0;
+    top: 65px;
+}
+header nav ul{
+    display: flex;
+}
+#active{
+    background-color: var(--hover);
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+header nav ul li a{
+    color: white;
+    margin-left: 30px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/****************************************
+BANNER
+****************************************/
+.banner img{
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+ 
+}
+.banner{
+    background-color: white;
+}
+/****************************************
+FEATURED
+****************************************/
+/****************************************
+MARKETING
+****************************************/
+.marketing{
+    background-color: var(--marketingbcg);
+    color: var(--marketingText);
+    padding: 90px 0;
+}
+.marketing .container{
+    display: flex;
+    justify-content: space-between;
+}
+.marketing .container .element{
+    flex: 0 0 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.marketing .container .element .content{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+.marketing .container .element .content p{
+    font-size: 0.9rem;
+    font-weight: 300;
+    flex: 0 0 70%;
+    color:  #8c5240;
+}
+
+.marketing .container .element h2{
+    padding-bottom: 20px;
+    color: #c0745d;
+    font-size: 2rem;
+}
+.marketing .container .lastElement{
+    display: flex;
+    flex-direction: column;
+}
+.marketing .container .lastElement p{
+    font-weight: 300;
+}
+.marketing .container .lastElement img{
+    width: 100%;
+    padding: 25px 0;
+}
+.marketing .container .lastElement h2{
+    font-size: 1.8rem;
+    color: #c0745d;
+    font-weight: 700;
+}
+/****************************************
+MAIN
+****************************************/
+.main{
+    background-color: var(--mainBcg);
+    color: var(--mainText);
+    padding: 90px 0;
+}
+.main .container{
+    display: flex;
+    justify-content: space-between;
+}
+.main .container .left{
+    flex: 0 0 66%;
+   
+}
+.main .container .right{
+    flex: 0 0 30%;
+}
+.main .container .left h2{
+    font-size: 1.5rem;
+    color: #bc765f;
+    margin-bottom: 45px;
+}
+.main .container .left p{
+    color: #774535;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+.main .container .left p a{
+    text-decoration: underline;
+    color: #BC765f;
+}
+.main .container .right h2 {
+    font-size: 1.5rem;
+    color: #bc765f;
+    margin-bottom: 45px;
+}
+.main .container .right ul li{
+    padding-bottom: 26px;
+}
+.main .container .right ul li a{
+    text-decoration: underline;
+    color: #774535;
+    font-size: 15px;
+    font-weight: 300;
+}
+/****************************************
+FOOTER
+****************************************/
+footer{
+    text-align: center;
+    color: #774535;
+    padding: 50px 0;
+    font-size: 0.9rem;
+}

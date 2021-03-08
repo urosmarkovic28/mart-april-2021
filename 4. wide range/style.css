@@ -121,3 +121,67 @@ SERVICES
     font-size: 1.5rem;
     margin-bottom: 50px;
 }
+/*******************************************
+BLOG
+********************************************/
+.blog{
+    background-color: var(--lightGray);
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blog h2{
+    text-transform: uppercase;
+    color: var(--primary);
+    font-size: 2.7rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.blog h4{
+    text-transform: uppercase;
+    color: var(--primary);
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 70px;
+}
+.blog .container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.blog .container div{
+    /*flex: 0 0 23%;*/
+    text-align: center;
+}
+.blog .container h3{
+    text-transform: uppercase;
+    color: var(--primary);
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.blog .container p{
+    margin-bottom: 50px;
+    color: var(--primary);
+    font-weight: 300;
+}
+.blog .container button{
+    background-color: var(--bcgColor);
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+}
+.blog .container button:hover{
+    opacity: .8;
+    transition: var(--transition);
+}
+/*******************************************
+FOOTER
+********************************************/
+footer{
+    text-align: center;
+    margin-top: 50px;
+}

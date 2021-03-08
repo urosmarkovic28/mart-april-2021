@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700;900&display=swap');
+:root{
+    --fontFamily:'Source Sans Pro', sans-serif;
+    --bcgColor:#3e86d8;
+    --shadow: rgba(0,0,0,.8);
+    --bcgPortfolio: rgba(0,0,0,.02);
+    --colorHeader: rgba(0,0,0,0.8);
+    --primary:#333333;
+    --lightGray: #fafafa;
+    --borders: #eaeaea;
+    --white: #FFF;
+    --fontSize:16px;
+    --transition: .3s ease;
+}/*******************************************
+BASIC
+********************************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--fontFamily);
+    color: var(--primary);
+    background: var(--bcgColor);
+    padding: 0 20px 100px 20px;
+    font-size: var(--fontSize);
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+li{
+    list-style: none;
+}
+/*******************************************
+HEADER
+********************************************/
+header{
+    background-image: url(img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+header article .logo{
+    background: var(--shadow);
+    color: var(--white);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 15px 15px;
+    line-height: 25px;
+}
+header article .logo span{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+header .icons a{
+    color: white;
+    font-size: 1.3rem;
+    margin-left: 30px;
+}
+header nav{
+    background-color: #3e86d8;
+    padding: 20px 0;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav ul li a{
+    color: white;
+    opacity: .6;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+}
+header nav ul li a:hover{
+    color: var(--white);
+    opacity: 1;
+    transition: var(--transition);
+}

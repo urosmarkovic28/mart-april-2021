@@ -109,3 +109,51 @@ FEATURED
     line-height: 1.5;
     font-size: 0.95rem;
 }
+/****************************************
+MARKETING
+****************************************/
+.marketing{
+    background-color: var(--marketingbcg);
+    color: var(--marketingText);
+    padding: 90px 0;
+}
+.marketing .container{
+    display: flex;
+    justify-content: space-between;
+}
+.marketing .container .element{
+    flex: 0 0 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.marketing .container .element .content{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+.marketing .container .element .content p{
+    font-size: 1rem;
+    flex: 0 0 70%;
+    color:  #8c5240;
+}
+
+.marketing .container .element h2{
+    padding-bottom: 20px;
+    color: #c0745d;
+    font-size: 2rem;
+}
+.marketing .container .lastElement{
+    display: flex;
+    flex-direction: column;
+}
+.marketing .container .lastElement img{
+    width: 100%;
+    padding: 25px 0;
+}
+.marketing .container .lastElement h2{
+    font-size: 1.8rem;
+    color: #c0745d;
+    font-weight: 700;
+}
